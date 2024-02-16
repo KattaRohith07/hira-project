@@ -73,23 +73,24 @@ nav ul li a:hover::after{
 }
 @media only screen and (max-width:600px){
     #header{
-background-image: url(https://images.unsplash.com/photo-1612954470794-848f080dfda1?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-image: url(https://images.unsplash.com/photo-1706534195222-7bab64760ea0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDV8TThqVmJMYlRSd3N8fGVufDB8fHx8fA%3D%3D);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
     }
     .header-text{
-        margin-top: 90%;
+        margin-bottom:70%;
         font-size: 16px;
     }
     .header-text h1{
         font-size: 30px;
         color: black;
         font-weight: bold;
+     ;
     }
     marquee{
         width: 100%;
-        color: gray;
+        color: black;
         font-size: 16px;
         font-weight: bold;
     }
