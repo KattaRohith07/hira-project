@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hira</title> 
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="services.css">
+    <script src="https://kit.fontawesome.com/c6920433d0.js" crossorigin="anonymous"></script>
+    <style>
+        .tab-contents-container{
+    width: 80%;
+    height: 80vh;
+    padding: 10px;
+    margin-left: 8%;
+    margin-top: 4%;
+    border-radius: 20px;
+    box-shadow:  0px 5px 25px rgba(0.2,0.2,0.2,0.2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <center style="color: white; font-weight: bold;">
+            <h1>Hira<span>-The Security Assistant</span> </h1>
+            <p>Me as HIRA offers 2 services to my users that allow them to get better understanding of me.</p>
+        </center>
+    </div>
+    <center>
+        <div id="services">
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('drowsiness')">Drowsiness Detection</p>
+                <p class="tab-links" onclick="opentab('accident')">Accident Detection</p>
+            </div>
+            <div class="tab-contents-container" style="margin-left: -2%;">
+                <div class="tab-contents active-tab" id="drowsiness">
+                    <p style="margin-top: -2%;">
+                        Drowsiness detection systems play a crucial role in enhancing safety across various domains, particularly in transportation. These systems utilize advanced technologies such as computer vision, machine learning, and physiological sensors to monitor and analyze a person's level of alertness. In the context of driving, for example, cameras can track facial expressions and eye movements to identify signs of drowsiness, such as drooping eyelids or prolonged periods of closed eyes. Machine learning algorithms are then employed to interpret these signals and provide real-time assessments of the driver's alertness. When drowsiness is detected, these systems can trigger alerts, such as audible alarms or seat vibrations, prompting the individual to take corrective action, like pulling over for a break or a rest.
+                    </p>
+                    <br>
+                    <p>
+                        Beyond the realm of transportation, drowsiness detection has applications in various industries where maintaining vigilance is critical. For instance, in healthcare settings, these systems can be integrated into monitoring devices for medical professionals working long hours, ensuring their ability to make accurate decisions without compromising patient safety. The integration of drowsiness detection technology underscores a broader trend in leveraging artificial intelligence to enhance safety and productivity in diverse environments.
+                    </p>
+                    
+                        <video width="400" height="300" controls>
+                            <source src="./Demo Background Sample Video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>               
+                  
+                </div>
+                
+                <div class="tab-contents" id="accident">
+                    <p style="margin-top: -2%;">
+                        Accident detection systems are technological solutions designed to swiftly identify and respond to unexpected incidents, primarily in the context of road safety. These systems leverage a combination of sensors, data analytics, and communication technologies to detect signs of a potential accident and trigger appropriate responses. In the automotive industry, for example, modern vehicles often come equipped with advanced driver assistance systems (ADAS) that include accident detection features. These systems use sensors such as accelerometers and gyroscopes to monitor the vehicle's movements and detect abrupt changes indicative of a collision. Additionally, in-vehicle cameras and radar systems contribute to the comprehensive assessment of the surrounding environment.
+                    </p>
+                    <br>
+                    <p>
+                        Once an accident is detected, these systems can automatically initiate actions such as deploying airbags, activating emergency braking, and sending distress signals. In some cases, connected vehicle technologies enable communication with emergency services, providing them with critical information about the incident, including the location and severity of the impact. Beyond automotive applications, accident detection systems are also utilized in industrial settings, where they enhance worker safety by promptly identifying and responding to potential accidents through the integration of smart sensors and monitoring devices.
+                    </p>
+                    
+                    <video width="400" height="300" controls>
+                        <source src="./Demo Background Sample Video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>               
+              
+                </div>
+            </div>
+        </div>
+    </center>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) { // Added event parameter
+            for (var i = 0; i < tablinks.length; i++) { // Used regular for loop
+                tablinks[i].classList.remove("active-link");
+            }
+            for (var i = 0; i < tabcontents.length; i++) { // Used regular for loop
+                tabcontents[i].classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
