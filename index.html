@@ -5,9 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIRA</title>
+    <style>
+    #testim {
+  position: relative;
+  padding: 80px 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.testim h2 {
+  color: var(--secound-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.testim::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  top: 0;
+  left: 0;
+  background-color: var(--main-color);
+  height: 100%;
+  z-index: -1;
+}
+
+.testim::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  top: 0;
+  right: 0;
+  background-color: #0d141f;
+  height: 100%;
+}
+
+.testim-content {
+  position: relative;
+}
+
+.testim-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; /* Adjust as needed */
+}
+.testim-box {
+  z-index: 2;
+  background-color: var(--secound-color);
+  padding: 20px 30px;
+  width: calc(23% - 30px); 
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(239, 233, 233, 0.1);
+  transition: transform 0.3s ease-in-out; 
+}
+.testim-box:hover {
+  transform: scale(1.05);
+}
+
+
+.testim-content h3 {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.testim-box > p {
+  color: rgb(209, 194, 194);
+  font-style: italic;
+  padding-bottom: 20px;
+}
+.testim-box-content p {
+  color: var(--main-color);
+}
+    </style>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/c6920433d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 <body>
 <div id="header">
@@ -17,27 +88,111 @@
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="review.html">Reviews</a></li>
+                <li><a href="#testim">Reviews</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="product.html">Buy Product</a></li>
             </ul>
         </nav>
         <div class="header-text">
-<h1>Hira<span>-The Security Assistant</span> </h1><br>
-            <marquee width="70%" direction="up" height="150px" scrollamount="2">
-                <p>Welcome to HIRA, your premier destination for cutting-edge aftermarket sensor products designed to enhance 
-                    <br>driving safety. Dive into our carefully curated selection, showcasing advanced technologies for drowsiness 
-                    <br>detection and accident prevention. Our secure online platform ensures a seamless shopping experience,<br>
-                    offering effortless navigation and protected transactions through industry-standard safeguards.
+            <h1>Hira<span>-The Security Assistant</span></h1><br>
+            <p>Welcome to HIRA, your premier destination for cutting-edge aftermarket sensor products designed to enhance 
+                <br>driving safety. Dive into our carefully curated selection, showcasing advanced technologies for drowsiness 
+                <br>detection and accident prevention. Our secure online platform ensures a seamless shopping experience,<br>
+                offering effortless navigation and protected transactions through industry-standard safeguards.
 
-                    Explore 
-                    <br>
-                    our user-friendly interface to discover a world of innovation. Gain valuable insights with our video feature,<br>
-                     providing a detailed overview of drowsiness detection and accident prevention moments. Join the HIRA <br>
-                     community in championing a safer road culture. Each purchase is a meaningful step towards a worry-free <br> journey, where the synergy of safety and innovation ensures your driving experience is second to none.</p>
-        </marquee>    
+                Explore 
+                <br>
+                our user-friendly interface to discover a world of innovation. Gain valuable insights with our video feature,<br>
+                 providing a detailed overview of drowsiness detection and accident prevention moments. Join the HIRA <br>
+                 community in championing a safer road culture. Each purchase is a meaningful step towards a worry-free <br> journey, where the synergy of safety and innovation ensures your driving experience is second to none.</p>  
             
         </div>
     </div>
 </div>
+
+<div id="testim" style="padding-bottom: 33%;">
+    <nav>
+        <img src="./newlogo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#testim">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="product.html">Buy Product</a></li>
+        </ul>
+    </nav>
+    <div class="container1" style="margin-top: 5%;">
+      <div class="testim-content">
+        <div class="testim-row">
+          <div class="testim-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure non reiciendis reprehenderit? Dicta eaque illo ut beatae alias quod, distinctio ad, asperiores vitae culpa qui nisi rerum debitis modi.</p>
+            <div class="testim-box-content">
+              <h3>user</h3>
+             
+            </div>
+          </div>
+          <div class="testim-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure non reiciendis reprehenderit? Dicta eaque illo ut beatae alias quod, distinctio ad, asperiores vitae culpa qui nisi rerum debitis modi.</p>
+            <div class="testim-box-content">
+             
+              <h3>user</h3>
+             
+            </div>
+          </div>
+          <div class="testim-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure non reiciendis reprehenderit? Dicta eaque illo ut beatae alias quod, distinctio ad, asperiores vitae culpa qui nisi rerum debitis modi.</p>
+            <div class="testim-box-content">
+             
+              <h3>user</h3>
+            
+            </div>
+          </div>
+          <div class="testim-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure non reiciendis reprehenderit? Dicta eaque illo ut beatae alias quod, distinctio ad, asperiores vitae culpa qui nisi rerum debitis modi.</p>
+            <div class="testim-box-content">
+           
+              <h3>user</h3>
+              
+            </div>
+          </div>
+        </div>
+        <div class="testim-row">
+        <div class="testim-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure non reiciendis reprehenderit? Dicta eaque illo ut beatae alias quod, distinctio ad, asperiores vitae culpa qui nisi rerum debitis modi.</p>
+            <div class="testim-box-content">
+       
+              <h3>user</h3>
+              
+            </div>
+          </div>
+          <div class="testim-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure non reiciendis reprehenderit? Dicta eaque illo ut beatae alias quod, distinctio ad, asperiores vitae culpa qui nisi rerum debitis modi.</p>
+            <div class="testim-box-content">
+             
+              <h3>user</h3>
+           
+            </div>
+          </div>
+          <div class="testim-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure non reiciendis reprehenderit? Dicta eaque illo ut beatae alias quod, distinctio ad, asperiores vitae culpa qui nisi rerum debitis modi.</p>
+            <div class="testim-box-content">
+             
+              <h3>user</h3>
+            
+            </div>
+          </div>
+          <div class="testim-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure non reiciendis reprehenderit? Dicta eaque illo ut beatae alias quod, distinctio ad, asperiores vitae culpa qui nisi rerum debitis modi.</p>
+            <div class="testim-box-content">
+             
+              <h3>User</h3>
+              
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
