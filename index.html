@@ -15,11 +15,13 @@
   padding: 80px 60px;
   display: flex;
   flex-wrap: wrap;
+  background-image: url(https://images.unsplash.com/photo-1541450805268-4822a3a774ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 .testim h2 {
   color: var(--secound-color);
   font-size: 2rem;
   font-weight: bold;
+  color: black;
 }
 
 .testim::before {
@@ -58,7 +60,8 @@
   padding: 20px 30px;
   width: calc(23% - 30px); 
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(239, 233, 233, 0.1);
+  /* box-shadow: 0 4px 8px rgba(239, 233, 233, 0.1); */
+  box-shadow:  0px 5px 25px rgba(1,1,1,1);
   transition: transform 0.3s ease-in-out; 
 }
 .testim-box:hover {
@@ -67,14 +70,17 @@
 
 
 .testim-content h3 {
-  color: #fff;
+  color: black;
   font-size: 1.3rem;
+
 }
 
 .testim-box > p {
-  color: rgb(209, 194, 194);
+  color:black;
   font-style: italic;
   padding-bottom: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
 }
 .testim-box-content p {
   color: var(--main-color);
@@ -195,9 +201,13 @@
           </div>
       </div>
       </div>
-      <button type="submit" class="btn btn2">Post Review</button>
+      <button type="submit" class="btn btn2" onclick="next()">Post Review</button>
     </div>
   </div>
-
+<script>
+  function next(){
+    window.location.href="review.html";
+  }
+</script>
 </body>
 </html>
